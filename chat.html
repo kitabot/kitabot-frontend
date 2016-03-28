@@ -29,7 +29,7 @@
       <div class="jumbotron" align="center">
         <h1>Kitabot</h1>
       </div>
-      <form action="/apps" method="post">
+      <form action="/apps" method="post" onsubmit="validateInput()">
           <input type="text" class="form-control" placeholder="Pertanyaan"><br>
           <input type="submit" class="btn btn-info">
       </form>
@@ -40,5 +40,16 @@
     <script src="http://mercysmart.github.io/cepatsembuh-web/js/vendor/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="http://mercysmart.github.io/cepatsembuh-web/js/flat-ui.js"></script>
+    <!-- Costum JS -->
+    <script type="text/javascript">
+    function validateInput() {
+      var input = $('.form-control').val();
+      if (input == '') {
+        alert('Jangan galau bro.. ayo ditulis pertanyaannya :v')
+      } else {
+        return true;
+      }
+    }
+    </script>
   </body>
 </html>
