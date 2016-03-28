@@ -1,7 +1,6 @@
 from flask import Flask
 from flask import render_template
 from flask import request
-# from bs4 import BeautifulSoup as bs
 import aiml
 
 bot = aiml.Kernel()
