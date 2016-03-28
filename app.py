@@ -22,7 +22,7 @@ def homepage():
 def echo():
     answer = bot.respond(request.form['text'])
 
-    return render_template("index.html",data=answer)
+    return render_template("chat.html",data=answer)
 
 if __name__ == "__main__":
 	app.run(threaded=True, debug = True, host='0.0.0.0', port=8888, passthrough_errors=True)
