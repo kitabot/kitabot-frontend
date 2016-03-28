@@ -2,7 +2,7 @@ from flask import Flask
 from flask import render_template
 from flask import request
 # from bs4 import BeautifulSoup as bs
-import aiml 
+import aiml
 
 bot = aiml.Kernel()
 try:
@@ -21,7 +21,7 @@ def homepage():
 @app.route('/apps', methods=['GET','POST'])
 def echo():
     answer = bot.respond(request.form['text'])
-    
+
     return render_template("index.html",data=answer)
 
 if __name__ == "__main__":
