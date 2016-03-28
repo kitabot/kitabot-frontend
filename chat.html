@@ -20,24 +20,19 @@
     <![endif]-->
   </head>
   <body>
+    <style media="screen">
+      .form-control {
+        width: 250px;
+      }
+    </style>
     <div class="container" align="center">
       <div class="jumbotron" align="center">
         <h1>Kitabot</h1>
       </div>
-      <div class="row">
-        <div class="col-md-4">
-          <h3>Siapa nama lu?</h3>
-          <h4>Lupa bro, ampun..</h4>
-        </div>
-        <div class="col-md-4">
-          <h3>Berapa umur lu?</h3>
-          <h4>Lupa bro, ampun..</h4>
-        </div>
-        <div class="col-md-4">
-          <h3>Dimana rumah lu?</h3>
-          <h4>Lupa bro, ampun..</h4>
-        </div>
-      </div>
+      <form action="/apps" method="post">
+          <input type="text" class="form-control" placeholder="Pertanyaan"><br>
+          <input type="submit" class="btn btn-info">
+      </form>
     </div>
     <!-- /.container -->
 
@@ -45,12 +40,5 @@
     <script src="http://mercysmart.github.io/cepatsembuh-web/js/vendor/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="http://mercysmart.github.io/cepatsembuh-web/js/flat-ui.js"></script>
-    <!-- Keymaster -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/keymaster/1.6.1/keymaster.min.js" charset="utf-8"></script>
-    <script type="text/javascript">
-      key('/', function() {
-        window.location.href = 'chat.html';
-      });
-    </script>
   </body>
 </html>
