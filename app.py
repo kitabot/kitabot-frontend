@@ -5,10 +5,10 @@ import aiml
 
 bot = aiml.Kernel()
 try:
-    print '[+] loading bot brain'
+    print '[+] Loading bot brain..'
     bot.learn('brain/brain.aiml')
-    print '[+] brain loaded'
-    print 'App is running at port 8888'
+    print '[+] Brain loaded!'
+    print '[+] Magic happens at port 8888'
 except Exception as e:
     raise Exception(e)
 
