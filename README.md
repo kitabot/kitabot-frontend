@@ -6,4 +6,4 @@ Front-end components for kitabot
 * [Andre Christoga](http://christo.js.org)
 
 ## License
-Ulan/Kitabot is licensed under MIT.
+Kitabot is licensed under MIT.
